@@ -1,9 +1,10 @@
 from rest_framework import serializers
 from aplicacion.models import User
 #from .productosSerializer import ProductosSerializer
+#from aplicacion.models import Productos
 
 class UserSerializer(serializers.ModelSerializer):
-   # productos = ProductosSerializer()
+    #productos = ProductosSerializer()
     
     class Meta:
         model = User
@@ -11,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
         #fields = ['id', 'username', 'password', 'name', 'idCard', 'address', 'phone','email', 'productos']
         fields = ['id', 'username', 'name', 'idCard', 'address', 'phone','email']
         
-    '''  
+''' 
     def create(self, validated_data):
         productosData = validated_data.pop('productos')
         userInstance = User.objects.create(**validated_data)
@@ -28,7 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
           'idCard': user.idCard,
           'address': user.address,
           'phone': user.phone,
-          'email': user.email         
+          'email': user.email      
           
       }         
-'''  
+''' 
