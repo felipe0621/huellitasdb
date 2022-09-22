@@ -21,6 +21,7 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'productos', views.ProductosView, basename='productos')
+#router.register(r'user', views.UserCreateView, basename='user')
 
 
 urlpatterns = [

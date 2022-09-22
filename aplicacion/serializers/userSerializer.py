@@ -1,15 +1,10 @@
+from aplicacion.models.user import User
 from rest_framework import serializers
 from aplicacion.models import User
-#from .productosSerializer import ProductosSerializer
-#from aplicacion.models import Productos
-
 class UserSerializer(serializers.ModelSerializer):
-    #productos = ProductosSerializer()
-    
-    class Meta:
-        model = User
         
-        #fields = ['id', 'username', 'password', 'name', 'idCard', 'address', 'phone','email', 'productos']
+    class Meta:
+        model = User        
         fields = ['id', 'username', 'name', 'idCard', 'address', 'phone','email']
         
 ''' 
