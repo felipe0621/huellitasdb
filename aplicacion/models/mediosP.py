@@ -10,3 +10,6 @@ class MediosP(models.Model):
     tarjeta_credito = models.BooleanField(default=False)
     pse =  models.BooleanField(default=False)
     
+    
+    
+    #comentanto la linea 15
