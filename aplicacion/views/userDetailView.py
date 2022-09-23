@@ -5,7 +5,7 @@ from rest_framework_simplejwt.backends import TokenBackend
 from rest_framework.permissions import IsAuthenticated
 from aplicacion.models.user import User
 from aplicacion.serializers.userSerializer import UserSerializer
-from rest_framework.decorators import api_view
+#from rest_framework.decorators import api_view
 #from rest_framework.views import APIView
 
 class UserDetailView(generics.RetrieveUpdateDestroyAPIView):
